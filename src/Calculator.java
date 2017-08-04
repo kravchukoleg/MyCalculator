@@ -20,7 +20,12 @@ public class Calculator {
     JButton button9;
     JButton buttonPoint;
     JButton buttonEqual;
+    JButton buttonAdd;
+    JButton buttonSub;
+    JButton buttonDiv;
+    JButton buttonPow;
     JPanel p1;
+    JPanel p2;
 
     Calculator(){
 
@@ -44,6 +49,10 @@ public class Calculator {
         button9 = new JButton("9");
         buttonPoint = new JButton(".");
         buttonEqual = new JButton("=");
+        buttonAdd = new JButton("+");
+        buttonSub = new JButton("-");
+        buttonDiv = new JButton("/");
+        buttonPow = new JButton("*");
 
         p1 = new JPanel();
         GridLayout gl = new GridLayout(4,3);
@@ -62,9 +71,19 @@ public class Calculator {
         p1.add(buttonPoint);
         p1.add(buttonEqual);
 
-        windowContent.add("Center",p1);
+        p2 = new JPanel();
+        GridLayout gl1 = new GridLayout(4,1);
+        p2.setLayout(gl1);
 
-        JFrame frame = new JFrame("Calculator ");
+        p2.add(buttonAdd);
+        p2.add(buttonSub);
+        p2.add(buttonPow);
+        p2.add(buttonDiv);
+
+        windowContent.add("Center",p1);
+        windowContent.add("West",p2);
+
+        JFrame frame = new JFrame("Calculator");
         frame.setContentPane(windowContent);
 
         frame.pack();
