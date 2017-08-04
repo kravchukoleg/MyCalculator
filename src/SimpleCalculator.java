@@ -2,7 +2,7 @@
  * Created by kravchuk on 29.07.2017.
  */
 import javax.swing.*;
-import java.awt.FlowLayout;
+//import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 public class SimpleCalculator {
