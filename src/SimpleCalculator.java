@@ -3,6 +3,7 @@
  */
 import javax.swing.*;
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
 public class SimpleCalculator {
 
@@ -10,8 +11,10 @@ public class SimpleCalculator {
 
         JPanel windowsContent = new JPanel();
 
-        FlowLayout fl = new FlowLayout();
-        windowsContent.setLayout(fl);
+//        FlowLayout fl = new FlowLayout();
+//        windowsContent.setLayout(fl);
+        GridLayout gl = new GridLayout(4,3);
+        windowsContent.setLayout(gl);
 
         JLabel label1 = new JLabel("Number 1:");
         JTextField field1 = new JTextField(10);
