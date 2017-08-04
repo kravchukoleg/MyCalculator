@@ -64,19 +64,14 @@ public class Calculator {
 
         windowContent.add("Center",p1);
 
-        JFrame frame = new JFrame("Calculator");
+        JFrame frame = new JFrame("Calculator ");
         frame.setContentPane(windowContent);
 
         frame.pack();
 
         frame.setVisible(true);
 
-
-
     }
-
-
-
 
     public static void main(String[] args){
         Calculator calc = new Calculator();
